@@ -27,6 +27,9 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
+  output: 'export',
+  basePath: '/NEO_VISION',
+  assetPrefix: '/NEO_VISION/',
 }
 
 if (userConfig) {
