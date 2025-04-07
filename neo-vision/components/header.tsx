@@ -29,8 +29,12 @@ export default function Header() {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
-            <Eye className="h-8 w-8 text-blue-300" />
-            <span className="font-bold text-xl text-gray-800">NEO VISION</span>
+          <img
+    src="/logo2.jpg" // ← replace with your actual logo path
+    alt="NEO VISION Logo"
+    className="h-10 w-auto"
+  />
+            {/* <span className="font-bold text-xl text-gray-800">NEO VISION</span> */}
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8">
