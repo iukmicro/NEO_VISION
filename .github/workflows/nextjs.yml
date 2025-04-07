@@ -25,19 +25,19 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: npm
+          cache: "npm"
 
       - name: Install dependencies
         run: npm ci
-        working-directory: ./NEO_VISION/NEO_VISION
+        working-directory: ./neo-vision
 
       - name: Build with Next.js
         run: npx next build
-        working-directory: ./NEO_VISION/NEO_VISION
+        working-directory: ./neo-vision
 
       - name: Export static site
         run: npx next export
-        working-directory: ./NEO_VISION/NEO_VISION
+        working-directory: ./neo-vision
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -47,7 +47,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./NEO_VISION/NEO_VISION/out
+          path: ./neo-vision/out
 
   deploy:
     environment:
