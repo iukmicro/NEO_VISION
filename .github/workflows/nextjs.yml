@@ -35,6 +35,8 @@ jobs:
       - name: Build with Next.js
         run: npx next build
         working-directory: ./neo-vision
+        env:
+          npm_config_user-agent: npm
 
       - name: Export static site
         run: npx next export
