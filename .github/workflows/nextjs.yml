@@ -38,10 +38,6 @@ jobs:
         env:
           npm_config_user-agent: npm
 
-      - name: Export static site
-        run: npx next export
-        working-directory: ./neo-vision
-
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
